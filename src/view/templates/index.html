@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PHP Conference SENDAI demo</title>
+    <style>
+      form, header {
+        margin: 16px;
+      }
+      form div {
+        margin: 16px;
+      }
+    </style>
+    <script>
+      function submitForm() {
+        document.getElementById('form').submit();
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>PHP Conference SENDAI demo</h1>
+    </header>
+
+    <main>
+      <iron-form allow-redirect id="form">
+        <form action="/demo" method="post">
+          <div>
+            <paper-checkbox name="checkbox" value="yes" checked>チェックボックス</paper-checkbox>
+          </div>
+          <div>
+            <paper-input type="text" name="text" label="入力ボックス"></paper-input>
+          </div>
+          <div>
+            <paper-button raised onclick="submitForm()">送信</paper-button>
+          </div>
+        </form>
+      </iron-form>
+    </main>
+    <script src="/js/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="{{ Mix('/js/app.js') }}"></script>
+  </body>
+</html>

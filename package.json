@@ -1,0 +1,31 @@
+{
+  "name": "phpcon-2019-sendai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=development webpack --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sizuhiko/phpcon-2019-sendai.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sizuhiko/phpcon-2019-sendai/issues"
+  },
+  "homepage": "https://github.com/sizuhiko/phpcon-2019-sendai#readme",
+  "dependencies": {
+    "@polymer/iron-form": "^3.0.1",
+    "@polymer/paper-button": "^3.0.1",
+    "@polymer/paper-checkbox": "^3.1.0",
+    "@polymer/paper-input": "^3.0.1",
+    "@webcomponents/webcomponentsjs": "^2.2.4"
+  },
+  "devDependencies": {
+    "laravel-mix": "^4.0.14",
+    "vue-template-compiler": "^2.5.22"
+  }
+}

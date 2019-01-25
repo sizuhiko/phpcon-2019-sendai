@@ -1,0 +1,19 @@
+{
+    "name": "sizuhiko/phpcon-2019-sendai",
+    "type": "demmo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sizuhiko",
+            "email": "sizuhiko@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.4",
+        "stormiix/laravel-mix-twig-extension": "dev-master"
+    },
+    "scripts": {
+        "start": "@php -S localhost:8080 -t src/public/"
+    }
+}
